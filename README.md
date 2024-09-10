@@ -1,4 +1,4 @@
-# pcf-file-upload-button
+# pcf-upload-button
 
 The `pcf-file-upload-button` is a PowerApps PCF (PowerApps Component Framework) component that enables users to upload a file through a button. The uploaded file's contents are converted into a Base64 string, which is then accessible via the component's output property. 
 
