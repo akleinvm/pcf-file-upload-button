@@ -9,7 +9,7 @@ The `pcf-file-upload-button` is a PowerApps PCF (PowerApps Component Framework) 
 
 ## Properties
 
-- `fileBase64`: Outputs the file's contents as a Base64-encoded string.
+- `content`: Outputs the file's contents as a Base64-encoded string.
 - `fileName`: Outputs the name of the uploaded file.
 
 ## Usage
