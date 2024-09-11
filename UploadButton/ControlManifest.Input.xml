@@ -2,7 +2,7 @@
 <manifest>
   <control namespace="FluentUI" constructor="UploadButton" version="0.0.2" display-name-key="Upload button" description-key="" control-type="standard" >
     <external-service-usage enabled="false"/>
-    <property name="Text" display-name-key="Text" description-key="The text of the button" of-type="SingleLine.Text" usage="input" required="true" />
+    <property name="Text" display-name-key="Text" description-key="The text of the button" of-type="SingleLine.Text" usage="input" required="true" default-value="Upload file"/>
     <property name="Accept" display-name-key="Accept" description-key="The extension of the file allowed to be uploaded" of-type="SingleLine.Text" usage="input" required="true" />
     <property name="FileName" display-name-key="Name" description-key="The filename (with extension) of the uploaded file" of-type="SingleLine.Text" usage="output" required="false" />
     <property name="FileContent" display-name-key="Content" description-key="The base64 string value of the uploaded file" of-type="SingleLine.Text" usage="output" required="false" />
