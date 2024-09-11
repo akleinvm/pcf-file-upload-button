@@ -56,7 +56,7 @@ export class UploadButton implements ComponentFramework.StandardControl<IInputs,
         const filename = file?.name ?? '';
         if (file) {
             const reader = new FileReader();
-            reader.onload = (file) => {
+            reader.onload = () => {
                 this.fileName = filename;
                 this.base64Output = reader.result?.toString() ?? '';
                 this.notifyOutputChanged();
