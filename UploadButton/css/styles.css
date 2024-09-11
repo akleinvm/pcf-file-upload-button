@@ -1,4 +1,4 @@
-button {
+.FluentUI button {
     font-family: "Segoe UI", sans-serif;
     font-size: 14px;
     outline: none;
@@ -9,7 +9,7 @@ button {
     height: 100%;
 }
   
-.primary-button {
+.FluentUI .primary-button {
     color: white;
     font-weight: 600;
     background-color: #0078d4;
@@ -19,46 +19,46 @@ button {
     transition: all 0.3s cubic-bezier(0.1, 0.9, 0.2, 1);
 }
   
-.primary-button:hover {
+.FluentUI .primary-button:hover {
     background-color: #005ba1;
     cursor: pointer; 
 }
   
-.primary-button:active {
+.FluentUI .primary-button:active {
     background-color: #0894ff;
 }
   
-.default-button {
+.FluentUI .default-button {
     color: rgb(36, 36, 36);
     background-color: white;
     border: 1px solid rgb(209, 209, 209);
     font-weight: 600;
-    border-radius: 2px;
+    border-radius: 4px;
     padding: 6.25px 15px;
     transition: all 0.3s cubic-bezier(0.1, 0.9, 0.2, 1);
     outline: none;
 }
   
-.default-button:hover {
+.FluentUI .default-button:hover {
     background-color: rgb(245, 245, 245);
     cursor: pointer; 
 }
   
-.default-button:active {
+.FluentUI .default-button:active {
     background-color: rgb(224, 224, 224);
 }
     
-input[type="textarea"] {
+.FluentUI input[type="textarea"] {
     border: 1px solid #ccc;
     display: inline-block;
     padding: 6px 12px;
     cursor: pointer;
 }
     
-input[type="file"] {
+.FluentUI input[type="file"] {
     display: none;
 }
   
-div {
+.FluentUI div {
     border: none
 }
