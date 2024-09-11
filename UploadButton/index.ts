@@ -16,19 +16,19 @@ export class UploadButton implements ComponentFramework.StandardControl<IInputs,
         this.context = context;
         this.notifyOutputChanged = notifyOutputChanged;
         this.container = container;
+        
+        this.fileInput = document.createElement('input');
+        this.fileInput.type = 'file';
+        this.fileInput.accept = this.context.parameters.Accept.raw ?? '.txt';
+        this.fileInput.addEventListener('change', this.handleFileUpload.bind(this));
+        this.container.appendChild(this.fileInput);
 
         this.button = document.createElement('button');
         this.button.className = 'default-button';
         this.button.innerText = this.context.parameters.Text.raw ?? '';
-        this.button.addEventListener('click', () => document.getElementById('fileInput')?.click());
+        this.button.addEventListener('click', () => this.container.getElementsByTagName('input')[0]?.click());
         this.container.appendChild(this.button);
 
-        this.fileInput = document.createElement('input');
-        this.fileInput.type = 'file';
-        this.fileInput.accept = this.context.parameters.Accept.raw ?? '.txt';
-        this.fileInput.id = 'fileInput';
-        this.fileInput.addEventListener('change', this.handleFileUpload.bind(this));
-        this.container.appendChild(this.fileInput);
     }
 
     public updateView(context: ComponentFramework.Context<IInputs>): void

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
-  <control namespace="FluentUI" constructor="UploadButton" version="0.0.3" display-name-key="Upload button" description-key="" control-type="standard" >
+  <control namespace="FluentUI" constructor="UploadButton" version="0.0.4" display-name-key="Upload button" description-key="" control-type="standard" >
     <external-service-usage enabled="false"/>
     <property name="Text" display-name-key="Text" description-key="The text of the button" of-type="SingleLine.Text" usage="input" required="true" default-value="Upload file"/>
     <property name="Accept" display-name-key="Accept" description-key="The extension of the file allowed to be uploaded" of-type="SingleLine.Text" usage="input" required="true" />
